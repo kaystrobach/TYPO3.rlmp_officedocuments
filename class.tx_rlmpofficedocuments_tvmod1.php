@@ -35,8 +35,6 @@
  *
  */
 
-require_once (PATH_t3lib.'class.t3lib_div.php');
-
 /**
  * Class being used by templavoila's page module
  *

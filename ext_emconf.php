@@ -29,9 +29,9 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearcacheonload' => 1,
 	'lockType' => '',
-	'author' => 'Robert Lemke',
-	'author_email' => 'robert@typo3.org',
-	'author_company' => 'robert lemke medienprojekte',
+	'author' => 'Robert Lemke, Kay Strobach',
+	'author_email' => 'typo3@kay-strobach.de',
+	'author_company' => 'Kay Strobach',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
 );
