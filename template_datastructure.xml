@@ -1,0 +1,27 @@
+<T3DataStructure>
+	<sheets>
+		<!-- Display of office document with page breaks enabled: -->
+		<sWithPageBreaks>
+			<ROOT>
+				<tx_templavoila>
+					<title>DISPLAY WITH PAGE BREAKS</title>
+					<description>Select the HTML element which contains the template for displaying an office document with page breaks enabled:</description>
+					<tags>div:inner</tags>
+				</tx_templavoila>
+				<type>array</type>
+				<el>
+					<field_dummy>
+						<tx_templavoila>
+							<title>Dummy</title>
+							<description>Some dummy field</description>
+							<tags>*:inner</tags>
+							<sample_data>
+								Just dummy text
+							</sample_data>
+						</tx_templavoila>												
+					</field_dummy>
+				</el>											
+			</ROOT>			
+		</sWithPageBreaks>
+	</sheets>
+</T3DataStructure>

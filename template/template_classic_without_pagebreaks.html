@@ -1,0 +1,49 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<html>
+	<head>
+		<title>Office Documents - Classic template: Without page breaks</title>
+	</head>
+	<body>
+	<!-- 
+	*	Available subparts:
+	*
+	*	###RLMP_OFFICEDOCUMENTS_TEMPLATE###				wraps the whole template, mandatory
+	*
+	*	Most important markers: (For a full list have a look at the manual ...)
+	*
+	*	###CONTENT###									Will be replaced by the document's content (ie. the document body of the current page)
+	*	###HEADER###									Will be replaced by the header, if any
+	*	###FOOTER###									The same for the document's footer
+	*
+	*	###USERFIELD_xxx###								Will be replaced by the content of the document's userdefined field 'xxx'
+	*
+	-->
+	
+		<!-- ###RLMP_OFFICEDOCUMENTS_TEMPLATE### begin -->
+			
+			<!-- ###RLMP_OFFICEDOCUMENTS_HEADER### start -->
+				<div class="tx_rlmpofficedocuments_header">
+					###HEADER###
+				</div>
+			<!-- ###RLMP_OFFICEDOCUMENTS_HEADER### end -->			
+	
+			###CONTENT###
+			
+			<!-- ###RLMP_OFFICEDOCUMENTS_FOOTER### start -->
+				<div class="tx_rlmpofficedocuments_footer">
+					###FOOTER###
+					<table style="width:100%; vertical-align:middle;">
+						<tr>
+							<td style="text-align:left; width:50%;">###AUTOR_NAME###&nbsp;</td>
+							<td style="text-align:right; width:50%;">Page ###PAGE_NUMBER### / ###TOTAL_PAGES###</td>
+						</tr>
+					</table>					
+				</div>	
+			<!-- ###RLMP_OFFICEDOCUMENTS_FOOTER### end -->
+		<!-- ###RLMP_OFFICEDOCUMENTS_TEMPLATE### end -->
+	</body>
+</html>

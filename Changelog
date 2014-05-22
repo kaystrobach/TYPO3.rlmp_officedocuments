@@ -1,0 +1,3 @@
+2005-09-21	Robert Lemke <robert@typo3.org>
+	#	Set $pi_checkCHash = TRUE to make sure that empty CHashes are handled correctly
+	+	Created this Changelog file

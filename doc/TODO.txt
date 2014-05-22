@@ -1,0 +1,33 @@
+rlmp_officedocuments TODO
+*************************
+
+
+
+	- renderTOC in pi1 must be rewritten:
+
+		WRONG!
+
+		<ul>
+		<li>one</li>
+				<ul>
+				<li>sub-one</li>
+				<li>sub-two</li>
+				<li>sub-three</li>
+				</ul>
+		<li>two</li>
+		<li>three</li>
+		</ul>
+
+		---
+
+		RIGHT!
+
+		<ul>
+		<li>one<ul>
+		<li>sub-one</li>
+		<li>sub-two</li>
+		<li>sub-three</li>
+		</ul></li>
+		<li>two</li>
+		<li>three</li>
+		</ul>

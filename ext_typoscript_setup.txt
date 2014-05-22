@@ -1,0 +1,84 @@
+plugin.tx_rlmpofficedocuments_pi1 {
+	debug = 0
+
+	template {
+		mode = auto
+		filePageBreaks = EXT:rlmp_officedocuments/template/template_classic_with_pagebreaks.html
+		fileNoPageBreaks = EXT:rlmp_officedocuments/template/template_classic_without_pagebreaks.html
+		browseBar {
+			prevLabelCObj = IMAGE
+			prevLabelCObj {
+				file = EXT:rlmp_officedocuments/res1/previous.png
+				altText.current = 1
+				titleText.current = 1
+			}
+			nextLabelCObj < .prevLabelCObj
+			nextLabelCObj {
+				file = EXT:rlmp_officedocuments/res1/next.png
+			}
+			currentLabelCObj = TEXT
+			currentLabelCObj {
+				current = 1
+				case = upper
+			}
+		}
+		downloadLabelCObj = IMAGE
+		downloadLabelCObj {
+			file = EXT:rlmp_officedocuments/res1/savetodisc.png
+			altText.current = 1
+			titleText.current = 1
+		}
+		tocLabelCObj = IMAGE
+		tocLabelCObj {
+			file = EXT:rlmp_officedocuments/res1/toc.png
+			altText.value = Table Of Content
+			altText.lang.de = Inhaltsverzeichnis
+			titleText < .altText
+		}
+		pagebreakSwitchLabel {
+			singleCObj = IMAGE
+			singleCObj {
+				file = EXT:rlmp_officedocuments/res1/singlepage.png
+				altText.value = Switch to single-page view
+				altText.lang.de = Ansicht als einzelne Seite
+				titleText < .altText
+			}
+			multipleCObj = IMAGE
+			multipleCObj {
+				file = EXT:rlmp_officedocuments/res1/multiplepages.png
+				altText.value = Switch to multiple-pages view
+				altText.lang.de = Ansicht auf mehreren Seiten
+				titleText < .altText
+			}
+		}
+	}
+
+	pageBreaks {
+		enable = 1
+		minCharsPerPage = 1
+		breakByHeadings {
+			enable = 1
+			level = 2
+			omitConsecutives = 1
+		}
+		TOC {
+			mode = dynamic
+			startWithTOC = 1
+			level = 3
+		}
+	}
+
+# NOT DOCUMENTED YET:
+
+	renderSettings {
+		renderEngine {
+			renderTableWidths = 1
+			renderNativeTOC = 0
+			timeFormat = %H:%M
+			dateFormat = %d.%m.%y
+
+			maxImageWidth = 400
+			dontRenderImageDisplaySize = 1
+		}
+	}
+}
